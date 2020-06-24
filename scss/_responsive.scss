@@ -83,7 +83,8 @@
       > li {
         display: inline-flex;
         height: 100%;
-        @include align-items(center);
+        padding-bottom: 15px;
+        @include align-items(flex-end);
       }
     }
     ul {

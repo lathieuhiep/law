@@ -3,11 +3,18 @@ global $law_options;
 
 $law_logo_image_id    =   $law_options['law_logo_image']['id'];
 $law_nav_top_sticky   =   $law_options['law_nav_top_sticky'];
+$law_information_phone =  $law_options['law_information_phone'];
 ?>
 
 <nav id="site-navigation" class="main-navigation<?php echo esc_attr( $law_nav_top_sticky == 1 ? ' active-sticky-nav' : '' ); ?>">
     <div class="site-navbar navbar-expand-lg">
         <div class="container">
+            <div class="site-phone text-right">
+                <span><?php esc_html_e( 'Gọi ngay', 'law' ); ?>:</span>
+                <a href="tel:<?php echo esc_attr( $law_information_phone ); ?>">
+                    <?php echo esc_html( $law_information_phone ); ?>
+                </a>
+            </div>
             <div class="site-navigation_warp d-flex justify-content-lg-end">
                 <div class="site-logo d-flex align-items-center">
                     <a href="<?php echo esc_url( get_home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>">
@@ -52,18 +59,6 @@ $law_nav_top_sticky   =   $law_options['law_nav_top_sticky'];
                     <?php endif; ?>
 
                 </div>
-
-                <?php if ( class_exists('Woocommerce') ) : ?>
-
-                    <div class="shop-cart-view d-flex align-items-center">
-                        <?php
-                        do_action( 'law_woo_shopping_cart' );
-
-                        the_widget( 'WC_Widget_Cart', '' );
-                        ?>
-                    </div>
-
-                <?php endif; ?>
             </div>
         </div>
     </div>
