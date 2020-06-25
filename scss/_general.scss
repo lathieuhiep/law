@@ -6,9 +6,9 @@ html {
 }
 body {
   min-height: 100vh;
-  line-height: 2.2em;
+  line-height: 1.7em;
   overflow-x: hidden;
-  font-size: 14px;
+  font-size: 16px;
   color: $color-primary;
   font-family: $font-family-text;
   font-weight: $font-weight-regular;
@@ -35,13 +35,16 @@ h3 {
   font-size: 24px;
 }
 h4 {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 h5 {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 400;
 }
 h6 {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
 }
 a {
   color: $color-primary;
@@ -56,7 +59,7 @@ a {
   }
 }
 p {
-  margin: 0 0 15px;
+  margin: 0 0 20px;
 
   &:last-child {
     margin-bottom: 0;

@@ -1,0 +1,13 @@
+.element-partners-carousel {
+  .item {
+    @include flexbox();
+    @include flex(1);
+    @include align-items(center);
+    @include justify-content(center);
+
+    img {
+      width: auto;
+      display: inline-block;
+    }
+  }
+}

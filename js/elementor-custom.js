@@ -17,6 +17,9 @@
         /* Element post carousel */
         elementorFrontend.hooks.addAction( 'frontend/element_ready/law-post-carousel.default', ElementCarouselSlider );
 
+        /* Element partners-carousel */
+        elementorFrontend.hooks.addAction( 'frontend/element_ready/law-partners-carousel.default', ElementCarouselSlider );
+
     } );
 
 })( jQuery );
