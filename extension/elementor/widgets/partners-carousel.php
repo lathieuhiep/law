@@ -19,7 +19,7 @@ class law_widget_partners_carousel extends Widget_Base {
     }
 
     public function get_icon() {
-        return 'fa fa-newspaper-o';
+        return 'far fa-handshake';
     }
 
     public function get_script_depends() {

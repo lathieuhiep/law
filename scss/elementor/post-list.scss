@@ -1,0 +1,35 @@
+.element-post-list {
+  .heading {
+    position: relative;
+    color: #333333;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    &:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: 0;
+      width: 36px;
+      height: 2px;
+      background-color: $color-title;
+    }
+  }
+  ul {
+    li {
+      list-style: circle;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        color: $color-hover;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
