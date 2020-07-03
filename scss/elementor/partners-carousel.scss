@@ -10,4 +10,34 @@
       display: inline-block;
     }
   }
+  .owl-carousel {
+    padding: 0 30px;
+
+    .owl-nav {
+      margin: 0;
+
+      button {
+        position: absolute;
+        top: 50%;
+        padding: 0 !important;
+        margin: 0;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        background-color: rgba(0, 0, 0, 0.5);
+        @include border-radius(50%);
+        @include transform(translateY(-50%));
+
+        i {
+          font-size: 14px;
+        }
+        &.owl-prev {
+          left: 0;
+        }
+        &.owl-next {
+          right: 0;
+        }
+      }
+    }
+  }
 }
