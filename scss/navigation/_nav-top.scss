@@ -12,22 +12,38 @@
     }
   }
 }
+.site-phone {
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  a {
+    color: $color-title;
+  }
+}
 .site-logo {
   @include flex(0 0 auto);
 
   a {
     display: inline-block;
     line-height: 64px;
-    padding: 15px 0;
+    padding-bottom: 15px;
   }
 }
 .site-menu {
   @include flex(1);
 
+  > ul {
+    > li {
+      > a {
+        text-transform: uppercase;
+      }
+    }
+  }
   ul {
     padding: 0;
     margin: 0;
-
     li {
       position: relative;
 
@@ -48,20 +64,26 @@
       }
       .sub-menu {
         min-width: 160px;
-        border-top: 1px solid $color-hover;
-        background-color: $border-color;
+        border-top: 3px solid $color-hover;
+        background-color: #f2efef;
         position: absolute;
         top: 120%;
         left: 0;
         z-index: -1;
         visibility: hidden;
         opacity: 0;
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.06);
         @include transition(all 0.4s ease-out);
 
         li {
           padding: 8px 0;
           display: block;
+          border-bottom: 1px solid #dcdadb;
+          @include transition(all 0.4s ease-out);
 
+          &:last-child {
+            border-bottom: 0;
+          }
           a {
             white-space: nowrap;
           }
@@ -70,6 +92,7 @@
             top: -1px;
           }
           &:hover {
+            background-color: #ffffff;
             > .sub-menu {
               left: 100%;
             }

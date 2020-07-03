@@ -33,6 +33,28 @@ function law_register_meta_boxes() {
     );
     /* End meta box post */
 
+    /* Start meta box service */
+    $law_meta_boxes[] = array(
+        'id' => 'post_format_option',
+        'title' => esc_html__( 'Option Service', 'law' ),
+        'post_types' => array( 'service' ),
+        'context' => 'side',
+        'priority' => 'low',
+        'fields' => array(
+            array(
+                'name'        => 'Icon',
+                'id'          => 'icon_services',
+                'desc'        => 'Link <a href="https://fontawesome.com/icons?d=gallery&m=free" target="_blank">icon</a>',
+                'type'        => 'text',
+                'clone'       => false,
+                'placeholder' => 'ex: fas fa-gavel',
+                'size'        => 30,
+            ),
+
+        )
+    );
+    /* End meta box service */
+
     return $law_meta_boxes;
 
 }

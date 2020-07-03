@@ -1,0 +1,85 @@
+.element-service {
+  background-color: rgba(192,1,1,0.7);
+  padding: 30px 35px;
+
+  .heading {
+    color: #ffffff;
+    font-size: 28px;
+  }
+  .item-col {
+    margin-bottom: 10px;
+    @include flexbox();
+  }
+  a {
+    background-color: #6C0000;
+    padding: 15px;
+    color: #ffffff;
+    overflow: hidden;
+    @include flexbox();
+    @include flex(1);
+
+    span {
+      &.icon {
+        padding-top: 5px;
+        overflow: hidden;
+        font-size: 21px;
+        width: 40px;
+        line-height: normal;
+        @include flex(0 0 auto);
+
+        i {
+          display: block;
+        }
+      }
+      &.text {
+        @include flex(1);
+      }
+    }
+    &:hover {
+      background-color: #4c0000 ;
+
+      i {
+        overflow: hidden;
+        -webkit-animation: toLeftFromRight 0.4s forwards;
+        -moz-animation: toLeftFromRight 0.4s forwards;
+        animation: toLeftFromRight 0.4s forwards;
+      }
+    }
+  }
+}
+@-webkit-keyframes toLeftFromRight {
+  49% {
+    -webkit-transform: translate(-100%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes toLeftFromRight {
+  49% {
+    -moz-transform: translate(-100%);
+  }
+  50% {
+    opacity: 0;
+    -moz-transform: translate(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes toLeftFromRight {
+  49% {
+    transform: translate(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
