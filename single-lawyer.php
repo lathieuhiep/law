@@ -47,8 +47,11 @@ $lawyer_info = rwmb_meta( 'lawyer_info' );
 
                         <?php if ( $i == 2 || $total_info % $i == 2 ||$i == $total_info ) : ?>
                             </div>
-                        <?php endif; ?>
-                        <?php $i++; endforeach; ?>
+                        <?php
+                            endif;
+                            $i++;
+                        endforeach;
+                        ?>
                     </div>
                     <?php
                     endif;
