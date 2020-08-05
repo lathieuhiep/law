@@ -37,9 +37,16 @@ function law_register_required_plugins() {
 		// This is an example of how to include a plugin from the WordPress Plugin Repository
 		array(
 			'name'      =>  'Contact Form 7',
-			'slug'      =>  'contact-form-7',
+			'slug'      =>  'breadcrumb-navxt',
 			'required'  =>  true,
 		),
+
+        // This is an example of how to include a plugin from the WordPress Plugin Repository
+        array(
+            'name'      =>  'Breadcrumb NavXT',
+            'slug'      =>  'contact-form-7',
+            'required'  =>  true,
+        ),
 
 	);
 

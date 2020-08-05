@@ -1,0 +1,59 @@
+.element-lawyer-list {
+  .col-item {
+    margin-bottom: 30px;
+  }
+  .item {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+    .content {
+      position: absolute;
+      width: 100%;
+      height: 80px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 15px 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      @include flexbox();
+      @include justify-content(center);
+      @include align-items(center);
+      @include flex-direction(column);
+      @include transition(all 0.4s ease-in-out);
+
+      .title {
+        color: #ffffff;
+        font-size: 16px;
+        margin: 0;
+
+      }
+      .hov-separator {
+        width: 40px;
+        height: 2px;
+        margin: 15px 0;
+        background-color: #000000;
+        display: none;
+      }
+      a {
+        color: #ffffff;
+        text-transform: capitalize;
+        display: none;
+      }
+    }
+    &:hover {
+      .content {
+        height: 100%;
+        background-color: rgba(192,1,1,0.7);
+
+        a {
+          display: block;
+        }
+      }
+      .hov-separator {
+        display: block;
+      }
+    }
+  }
+}

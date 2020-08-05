@@ -32,5 +32,3 @@ get_template_part( 'template-parts/navigation/inc', 'nav-top' );
 
 <!--Start Sticky Footer-->
 <div class="sticky-footer">
-
-

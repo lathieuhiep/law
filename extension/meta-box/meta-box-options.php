@@ -35,7 +35,7 @@ function law_register_meta_boxes() {
 
     /* Start meta box service */
     $law_meta_boxes[] = array(
-        'id' => 'post_format_option',
+        'id' => 'service_format_option',
         'title' => esc_html__( 'Option Service', 'law' ),
         'post_types' => array( 'service' ),
         'context' => 'side',
@@ -54,6 +54,47 @@ function law_register_meta_boxes() {
         )
     );
     /* End meta box service */
+
+    /* Start meta box lawyer */
+    $law_meta_boxes[] = array(
+        'id' => 'lawyer_format_option',
+        'title' => esc_html__( 'Option lawyer', 'law' ),
+        'post_types' => array( 'lawyer' ),
+        'context' => 'normal',
+        'priority' => 'high',
+        'fields' => array(
+            array(
+                'id'               => 'lawyer_image',
+                'name'             => 'Image Banner',
+                'type'             => 'image_advanced',
+                'force_delete'     => false,
+                'max_file_uploads' => 1,
+                'max_status'       => 'false',
+                'image_size'       => 'thumbnail',
+            ),
+
+            array(
+                'name'        => 'Họ và tên',
+                'id'          => 'lawyer_full_name',
+                'type'        => 'text',
+                'placeholder' => 'Họ và tên',
+                'size'        => 50,
+            ),
+
+
+            array(
+                'id'      => 'lawyer_info',
+                'name'    => 'Thông tin',
+                'type'    => 'text_list',
+                'clone' => true,
+                'options' => array(
+                    'Tên thông tin' => esc_html__( 'Tên thông tin', 'law' ),
+                    'Nội dung thông tin' => esc_html__( 'Nội dung thông tin', 'law' ),
+                ),
+            ),
+        )
+    );
+    /* End meta box lawyer */
 
     return $law_meta_boxes;
 

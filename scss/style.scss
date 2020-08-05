@@ -26,6 +26,7 @@ Text Domain: law
   ## Single
   ## Pagination
   ## Comment
+# Lawyer
 # Elementor
   ## Slider
   ## Posts Grid
@@ -33,6 +34,7 @@ Text Domain: law
   ## Partners Carousel
   ## Post List
   ## Services
+  ## Lawyers
 # Contact Form 7
 # Footer
 # Responsive
@@ -74,6 +76,11 @@ Text Domain: law
 # Blog
 -----------------------------------------------------------------------------*/
 @import "blog/blog";
+
+/**
+# Lawyer
+-----------------------------------------------------------------------------*/
+@import "lawyer/single";
 
 /**
 # Elementor

@@ -1,5 +1,5 @@
 .element-service {
-  background-color: rgba(192,1,1,0.7);
+  background-color: rgba(7,153,215,0.7);
   padding: 30px 35px;
 
   .heading {
@@ -11,7 +11,7 @@
     @include flexbox();
   }
   a {
-    background-color: #6C0000;
+    background-color: $background-primary;
     padding: 15px;
     color: #ffffff;
     overflow: hidden;
@@ -36,7 +36,7 @@
       }
     }
     &:hover {
-      background-color: #4c0000 ;
+      background-color: $background-hover;
 
       i {
         overflow: hidden;

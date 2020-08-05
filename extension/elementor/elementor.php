@@ -55,7 +55,8 @@ final class law_plugin_elementor_widgets {
             'about-text',
             'partners-carousel',
             'post-list',
-            'services'
+            'services',
+            'lawyers'
         ];
         
         foreach ( $build_widgets_filename as $widget_filename ) :

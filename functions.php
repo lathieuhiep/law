@@ -104,6 +104,7 @@ endif;
 
 /* Require Post Type */
 require get_parent_theme_file_path( '/extension/post-type/services.php' );
+require get_parent_theme_file_path( '/extension/post-type/lawyers.php' );
 
 /* Require Widgets */
 foreach(glob( get_parent_theme_file_path( '/extension/widgets/*.php' ) ) as $law_file_widgets ) {

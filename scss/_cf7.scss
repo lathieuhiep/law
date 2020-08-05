@@ -53,3 +53,47 @@ form {
     }
   }
 }
+// Custom cf7
+.contact-us {
+  color: #ffffff;
+  border: 5px solid $background-primary;
+  padding: 30px 30px 0 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  .heading {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 21px;
+    color: #ffffff;
+  }
+  .form-group {
+    input,
+    textarea {
+      border-radius: 0;
+    }
+    label {
+      margin-bottom: 0;
+    }
+    input {
+      &[type="submit"] {
+        padding: 15px 30px;
+        display: block;
+        width: 100%;
+        @include transition(all 0.4s ease-in-out);
+
+        &:hover {
+          background-color: $background-hover;
+        }
+      }
+    }
+    span {
+      &.wpcf7-form-control-wrap {
+        textarea {
+          height: 265px;
+        }
+      }
+    }
+  }
+}
